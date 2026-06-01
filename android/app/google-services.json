@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "49538736864",
+    "project_id": "furever-home-19609",
+    "storage_bucket": "furever-home-19609.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:49538736864:android:4929d92c4264af5d562685",
+        "android_client_info": {
+          "package_name": "com.example.my_flutter_projects"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsMczq52KW6sd8y0ffSuIOjobbjHZ3mUA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

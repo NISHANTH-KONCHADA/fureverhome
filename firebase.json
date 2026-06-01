@@ -1,0 +1,59 @@
+{
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ],
+    "headers": [
+      {
+        "source": "**/*.@(js|css|wasm)",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "max-age=31536000"
+          }
+        ]
+      },
+      {
+        "source": "index.html",
+        "headers": [
+          {
+            "key": "Cache-Control",
+            "value": "no-cache"
+          }
+        ]
+      }
+    ]
+  },
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "furever-home-19609",
+          "appId": "1:49538736864:android:4929d92c4264af5d562685",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "furever-home-19609",
+          "configurations": {
+            "android": "1:49538736864:android:4929d92c4264af5d562685",
+            "ios": "1:49538736864:ios:4a76583939e74cb8562685",
+            "macos": "1:49538736864:ios:4a76583939e74cb8562685",
+            "web": "1:49538736864:web:af20bd188adec3b6562685",
+            "windows": "1:49538736864:web:af20bd188adec3b6562685"
+          }
+        }
+      }
+    }
+  }
+}
